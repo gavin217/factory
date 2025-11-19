@@ -18,20 +18,20 @@ public class Airplane {
         length=157;
 
     }
-    public Airplane(int pCapacity){
+    public Airplane(int pCapacity, String pName, Boolean pIsDoubleDecker, int pLength,String pModel){
         capacity= pCapacity;
-        name="Jacob6";
-        model="boeing 737";
-        isDoubleDecker=false;
-        length=157;
+        name=pName;
+        model=pModel;
+        isDoubleDecker=pIsDoubleDecker;
+        length=pLength;
 
     }
-    //todo make a method called printinfo that prints the airplanes instance variables
+
     public void Printinfo(){
-        System.out.println(capacity);
-        System.out.println(model);
-        System.out.println(name);
-        System.out.println(length);
+        System.out.println(capacity);//not readable
+        System.out.println("model "+ model);//simple readable
+        System.out.println("this plane is named "+name);//fancy readable
+        System.out.println("this plane is "+length+" feet");//fanciest readable
         System.out.println(isDoubleDecker);
     }
 }

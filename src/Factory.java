@@ -6,6 +6,7 @@ public class Factory {
     public static void main(String[] args) {
         System.out.println("welcome to Gavin's factory");
         new Factory();
+
     }
 
     //constructor
@@ -19,9 +20,11 @@ public class Factory {
         //factoryInfo();
         yearFounded=1800;
         factoryInfo();
-        Airplane plane3=new Airplane(232);
+        Airplane plane3=new Airplane(232,"jacob",true,157,"Boeing 737");
         System.out.println(plane3.capacity);
         plane3.Printinfo();
+        AirplaneStuff terminal1=new AirplaneStuff();
+        terminal1.terminalinfo();
         //type varname=value
         //object of the type airplane
 
