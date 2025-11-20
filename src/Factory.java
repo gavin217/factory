@@ -23,8 +23,10 @@ public class Factory {
         Airplane plane3=new Airplane(232,"jacob",true,157,"Boeing 737");
         System.out.println(plane3.capacity);
         plane3.Printinfo();
-        AirplaneStuff terminal1=new AirplaneStuff();
-        terminal1.terminalinfo();
+        AirplaneStuff airport1=new AirplaneStuff();
+        AirplaneStuff airport2=new AirplaneStuff(1,"b",true);
+        airport1.airportinfo();
+        airport2.airportinfo();
         //type varname=value
         //object of the type airplane
 

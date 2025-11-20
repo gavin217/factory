@@ -1,23 +1,23 @@
 public class AirplaneStuff {
     public int gate;
-    public String airportName;
+    public String terminal;
     public Boolean boarding;
 
     public AirplaneStuff() {//constructor
-        gate = 250;
-        airportName = "Jacob6";
-        boarding = true;
+        gate = 2;
+        terminal = "a";
+        boarding = false;
 
 
     }
-    public AirplaneStuff(int pGate,String pAirportname,Boolean pBoarding){
+    public AirplaneStuff(int pGate,String pTerminal,Boolean pBoarding){
         gate=pGate;
-        airportName=pAirportname;
+        terminal=pTerminal;
         boarding=pBoarding;
     }
-    public void terminalinfo(){
+    public void airportinfo(){
         System.out.println(gate);
-        System.out.println(airportName);
+        System.out.println(terminal);
         System.out.println(boarding);
     }
 }
